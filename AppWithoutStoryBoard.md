@@ -1,10 +1,10 @@
 # App Without Using Storyboard
 
-Though there are some advantages of using storyboard like storyboard allows us to visualize the control follow of view controller across the app but there are some disadvantages of storyboard. The number of disadvantages are large in number than the it's benefits. However, you can find the disadvantages of storyboard [here](https://www.quora.com/Why-do-some-iOS-developers-not-use-storyboards).
+Though there are some advantages of using storyboard like storyboard allows us to visualize the control follow of view controller across the app but there are some disadvantages of storyboard. The number of disadvantages are larger in number than it's benefits. However, you can find the disadvantages of storyboard [here](https://www.quora.com/Why-do-some-iOS-developers-not-use-storyboards).
 
 ---
 
-Here is the process of building ios app without using a stroyboard.
+Here is the process of building ios app without using a storyboard.
 
 1. Create a new project or open an existing project
 2. Delete the Main.storyboard file
@@ -50,3 +50,5 @@ Here is the process of building ios app without using a stroyboard.
 9. Now all done. Design your screen programmatically to show content.
 
 
+
+-- Note: xib can be used instead of storyboard --
