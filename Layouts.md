@@ -1,10 +1,10 @@
-# Layout :rocket
+# Layout :rocket:
 
 In ios development “layout” generally refers to the arrangement and positioning of different views. Layout defines how different UI elements such as text view, image view, button etc are displayed in the screen. 
 
 ---
 
-## Auto Layout :boom
+## Auto Layout :boom:
 
 Auto Layout is the primary layout system used in iOS development. It is a constraint-based layout system that allows developers to create a responsive and adaptable user interface that can adjust to different screen sizes and orientations. Auto Layout is a concept which the size and position of all the views in the view hierarchy are dynamically calculated on run time, based on constraints placed on those views.
 
@@ -74,7 +74,7 @@ While layout anchors have vastly improved the user friendliness of Auto Layout, 
 
 
 
-## Frame Based Layout :fire
+## Frame Based Layout :fire:
 
 There is a another way of defining layout is frame based layout. Frame based layout system use coordinate system. The top left corner of the screen is the (x,y) → (0,0) point in frame based layout system. The coordinate system is shown in the following figure.
 
