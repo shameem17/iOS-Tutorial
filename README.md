@@ -1,7 +1,7 @@
-# iOS-Tutorial
-some interesting ios development topic covered here. 
+# iOS-Tutorial :fire:
+I shared my learning with you all. If anything seems to be wrong to you please help me to learn the correct one. Some interesting and critical topics will be shared here with reference links. So let's learn together. :+1:
 
-## Table of Contents
+## Table of Contents :rocket:
 
 <table>
 <tr>
