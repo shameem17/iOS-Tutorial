@@ -12,13 +12,13 @@ some interesting ios development topic covered here.
 
 <tr>
 <td> 1 </td>
-<td> <a herf="https://github.com/shameem17/iOS-Tutorial/blob/master/Layouts.md" target="_blank"> Layout </a> </td>
+<td> <a href="https://github.com/shameem17/iOS-Tutorial/blob/master/Layouts.md" target="_blank"> Layout </a> </td>
 
 <td> Details about iOS Auto Layout and Frame based layout </td>
 </tr>
 <tr>
 <td> 2 </td>
-<td> <a herf="https://github.com/shameem17/iOS-Tutorial/blob/master/AppWithoutStoryBoard.md" target="_blank"> App Without Sotryboard </a> </td>
+<td> <a href="https://github.com/shameem17/iOS-Tutorial/blob/master/AppWithoutStoryBoard.md" target="_blank"> App Without Storyboard </a> </td>
 
 <td> How to create iOS app without using storyboard </td>
 </tr>
