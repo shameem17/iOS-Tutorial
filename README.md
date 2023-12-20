@@ -1,12 +1,17 @@
 # iOS-Tutorial :fire:
 I shared my learning with you all. If anything seems to be wrong to you please help me to learn the correct one. Some interesting and critical topics will be shared here with reference links. So let's learn together. :+1:
 
+> **MARK**
+>
+>There are a lots of articles and tutorials available in online. Most of them are qualityful. But you may lost yourself in vast range of resources. I have tried to collect the gist of many documentations and provided the references in short.
+
 ## Table of Contents :rocket:
+<center>
 
 <table>
 <tr>
 <th> SL No</th>
-<th> Content </th>
+<th> Topics </th>
 <th> Short Discription </th>
 </tr>
 
@@ -24,3 +29,4 @@ I shared my learning with you all. If anything seems to be wrong to you please h
 </tr>
 
 </table>
+</center>
