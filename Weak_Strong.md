@@ -5,7 +5,7 @@ When a reference or instance of a class is created, it consumes a certain amount
 To make sure that instances don’t disappear while they’re still needed, ARC tracks how many properties, constants, and variables are currently referring to each class instance. ARC will not deallocate an instance as long as at least one active reference to that instance still exists. 
 
 
-To make the reference still exist, a strong reference is created whenever we assign a class instance to property, constant or variable. The name “strong” suggest that there is a firm holding connection to the instance. It doesn’t allow to deallocated the instance as long as the strong reference remain. Still confused? Let’s dive into an example: 
+To make the reference still exist, a strong reference is created whenever we assign a class instance to property, constant or variable. The name “strong” suggests that there is a firm holding connection to the instance. It doesn’t allow to deallocated the instance as long as the strong reference remain. Still confused? Let’s dive into an example: 
 
 
 
@@ -34,7 +34,7 @@ Now create some instances of the Car class.
 var car: Car?
 ```
 
-> **PIP**
+> **PIP** <br>
 >Why optional Car? not Car. Because the instances are optional and it will automatically be initialized with nil and don’t currently reference a Car instance. 
 >
 
@@ -60,13 +60,13 @@ var car2: Car? = car
 var car3: Car? = car
 ```
 
-As there is a strong relation or reference remains amon the three instances, dealloaction of any single or two of them is not possible.
+As there is a strong relation or reference remains amon the three instances, deallocation of any single or two of them is not possible.
 ```swift
 car = nil
 car2 = nil
 ```
 
-This will not deallocate the Car instance as there is a strong reference with car3 still exist. 
+This will not deallocate the Car instance as there is a strong reference with car3 still exists. 
 ```swift
 car3 = nil
 ``` 
@@ -77,7 +77,7 @@ Now the Car instance will be deallocated. This strong reference is a self class 
 
 # Strong Reference Cycles Between Class Instances 
 
-Now again consider of an example of a Car class and a Person class. These two classes can be related strongly in a sense that a Person may have a Car and a Car may have a owner. 
+Now again consider of an example of a Car class and a Person class. These two classes can be related strongly in the sense that a Person may have a Car and a Car may have an owner. 
 
 ```swift
 class Car{
@@ -118,7 +118,7 @@ var bmw: Car? = Car(name: "BMW")
 
 <center> <img src="https://github.com/shameem17/iOS-Tutorial/assets/53037559/787888d7-80e6-4447-baa3-28982159736b"> </center>
 
-This two instances of the two classes are not connected to each other. But if we assign the car property of Person class with the bmw instance and the owner of Car class with mr instance then there will be a strong reference cycle among the two instance.
+These two instances of the two classes are not connected to each other. But if we assign the car property of Person class with the bmw instance and the owner of Car class with mr instance then there will be a strong reference cycle among the two instances.
 
 ```swift
 mr!.car = car
@@ -134,13 +134,13 @@ mr = nil
 car = nil 
 ```
 
-The strong reference between Person and Car remains and can’t be broken. It also known as retention cycle. However it can be broken by breaking the reference cycle as follow:
+The strong reference between Person and Car remains and can’t be broken. It is also known as retention cycle. However, it can be broken by breaking the reference cycle as follows:
 
 ```swift
 mr!.car = nil
 ```
 
-But there may be thousands of references. To assigning nil to each object reference is quite difficult for us. We need something to automatically deinitialize the instances. 
+But there may be thousands of references. To assigning nil to each object reference is quite difficult for us. We need something to automatically deinitize the instances. 
 
 # Resolving Strong Reference Cycle
 
@@ -181,11 +181,10 @@ class Person{
 }
 ```
 
-Now there are no strong reference between Person and Car. So there is a question when to use weak and when to use unowned? 
-
+Now there are no strong references between Person and Car. So there is a question of when to use weak and when to use unowned. 🤔
 <center> <img src="https://github.com/shameem17/iOS-Tutorial/assets/53037559/14303a29-0238-4b57-a568-7ed673914bef"> </center>
 
-First let’s use see some rules of using a weak reference. 
+First, let’s see some rules of using a weak reference. 
 
 Rule 1: The variable must be mutuable. That means we can not make a let property as a weak property. 
 
@@ -209,7 +208,7 @@ class person{
 }
 ```
 
-> **TIPS** 
+> **TIPS** <br>
 > Use weak when the relation is optional. 
 > Don’t forget to unwrap the optional value before use
 
@@ -222,11 +221,11 @@ class BankAccont{
 }
 ```
 
-> **TIPS** 
-> Use unowned when the relation amon the classes is not optional. ARC never assign nil to an unowned reference.
+> **TIPS**  <br>
+> Use unowned when the relation among the classes is not optional. ARC never assigns nil to an unowned reference.
 >
 
-In both cases weak and unowned ARC don’t create a strong reference. 
+In both cases, weak and unowned ARC don’t create a strong reference. 
 
 
 # [weak self] 
@@ -282,12 +281,11 @@ obj?.setupClosure()
 obj = nil // Deinitialized will be printed
 
 ```
-# IOS Development Scenario 
+# IOS Development Scenario 📲
+In iOS development, there are many cases where we use closure to make API calls, download resources from online etc. There we use the self.view instance to make strong references of the viewcontroller. This causes memory leaks. We can avoid this memory leak issue by using [weak self] or [unowned self]. 
 
-In iOS development, there are many cases where we use closure to make API calls, download resources from online etc. There we use the self.view instance to make a strong references of the viewcontroller. This causes memory leak. We can avoid this memory leak issue by using [weak self] or [unowned self]. 
-
-> **NOTE**
->I tried to simply mention why and when to use weak and unowned. For more details you can follow the provided references.
+> **NOTE** <br>
+>I tried to simply mention why and when to use weak and unowned. For more details, you can follow the provided references.
 >
 
 
