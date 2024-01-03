@@ -135,3 +135,9 @@ Forced unwrapping may cause runtime error if the optional variable doesn't conta
 
 
 <a href="https://github.com/shameem17/Swift/tree/master/Optional/optional.playground"> ![code](https://img.shields.io/badge/Code-Playground-1769DE?style=for-the-badge&logo=codeium&labelColor=grey)</a>  <a href="https://github.com/shameem17/Swift/blob/master/Optional/optional.swift"> ![code](https://img.shields.io/badge/Swift-Code-red?style=for-the-badge&logo=swift)</a>
+
+
+## References 
+
+<a href="https://developer.apple.com/documentation/swift/optional#Using-the-Nil-Coalescing-Operator"> Swift Documentation </a>  <a href="https://www.hackingwithswift.com/quick-start/beginners/how-to-handle-missing-data-with-optionals"> Hack With Swift</a>
+

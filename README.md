@@ -17,6 +17,7 @@ I shared my learning with you all. If anything seems to be wrong to you please h
 <th> SL No</th>
 <th> Topics </th>
 <th> Short Discription </th>
+<th> Code Link </th>
 </tr>
 
 <tr>
@@ -24,12 +25,30 @@ I shared my learning with you all. If anything seems to be wrong to you please h
 <td> <a href="https://github.com/shameem17/iOS-Tutorial/blob/master/Layouts.md" target="_blank"> Layout </a> </td>
 
 <td> Details about iOS Auto Layout and Frame based layout </td>
+<td> </td>
 </tr>
 <tr>
 <td> 2 </td>
 <td> <a href="https://github.com/shameem17/iOS-Tutorial/blob/master/AppWithoutStoryBoard.md" target="_blank"> App Without Storyboard </a> </td>
 
 <td> How to create iOS app without using storyboard </td>
+<td> </td>
+</tr>
+
+<tr>
+<td> 3 </td>
+<td> <a href="https://github.com/shameem17/iOS-Tutorial/blob/master/optional.md" target="_blank"> Optionals</a> </td>
+
+<td> Optionals and Unwrapping </td>
+<td> <a href="https://github.com/shameem17/Swift/blob/master/Optional/optional.swift" target="_blank"> Code </a> </td>
+</tr>
+
+<tr>
+<td> 4 </td>
+<td> <a href="https://github.com/shameem17/iOS-Tutorial/blob/master/Weak_Strong.md" target="_blank"> Weak Strong</a> </td>
+
+<td> Strong Weak reference </td>
+<td>  </td>
 </tr>
 
 </table>
