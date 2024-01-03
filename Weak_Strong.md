@@ -1,4 +1,4 @@
-# weak strong 
+# 🚀 weak strong 
 
 When a reference or instance of a class is created, it consumes a certain amount of memory. After the compilation of the code or when the instance is not needed anymore, compiler automatically release the allocated memory for further use. This ensures that class instances don’t take up space in memory when they’re no longer needed. This mechanism is known as Automatic Reference Counting (ARC). However, if ARC were to deallocate an instance that was still in use, it would no longer be possible to access that instance’s properties, or call that instance’s methods. Indeed, if you tried to access the instance, your app would most likely crash.
 
@@ -75,7 +75,7 @@ Now the Car instance will be deallocated. This strong reference is a self class 
 
 
 
-# Strong Reference Cycles Between Class Instances 
+# :white_check_mark: Strong Reference Cycles Between Class Instances 
 
 Now again consider of an example of a Car class and a Person class. These two classes can be related strongly in the sense that a Person may have a Car and a Car may have an owner. 
 
@@ -142,7 +142,7 @@ mr!.car = nil
 
 But there may be thousands of references. To assigning nil to each object reference is quite difficult for us. We need something to automatically deinitize the instances. 
 
-# Resolving Strong Reference Cycle
+# :white_check_mark: Resolving Strong Reference Cycle
 
 Swift provides two ways to resolve strong reference cycles when you work with properties of class type: weak references and unowned references.
 Weak and unowned references enable one instance in a reference cycle to refer to the other instance without keeping a strong hold on it. The instances can then refer to each other without creating a strong reference cycle.
@@ -228,7 +228,7 @@ class BankAccont{
 In both cases, weak and unowned ARC don’t create a strong reference. 
 
 
-# [weak self] 
+# :white_check_mark: [weak self] 
 Now comes [weak self] or [unowned self]. In Swift, [weak self] is a capture list used in closures to avoid strong reference cycles, also known as retain cycles. A retain cycle occurs when two or more objects hold strong references to each other, which prevents them from being deallocated by the memory management system, even if they are no longer needed.
 
 ```swift
@@ -281,7 +281,7 @@ obj?.setupClosure()
 obj = nil // Deinitialized will be printed
 
 ```
-# IOS Development Scenario 📲
+# :white_check_mark: IOS Development Scenario 📲
 In iOS development, there are many cases where we use closure to make API calls, download resources from online etc. There we use the self.view instance to make strong references of the viewcontroller. This causes memory leaks. We can avoid this memory leak issue by using [weak self] or [unowned self]. 
 
 > **NOTE** <br>
